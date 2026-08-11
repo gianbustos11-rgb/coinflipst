@@ -18,11 +18,15 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: 'Tkicks - Sneakers & Streetwear',
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://coinflipst.com'),
+  title: {
+    default: 'Coinflip - Sneakers & Streetwear',
+    template: '%s | Coinflip'
+  },
   description: 'Tu destino exclusivo para Sneakers y Streetwear 100% originales en San Juan, Argentina.',
   keywords: ['sneakers', 'streetwear', 'zapatillas', 'ropa urbana', 'original', 'san juan'],
   openGraph: {
-    title: 'Tkicks - Sneakers & Streetwear',
+    title: 'Coinflip - Sneakers & Streetwear',
     description: 'Tu destino exclusivo para Sneakers y Streetwear 100% originales',
     type: 'website',
     locale: 'es_AR'
